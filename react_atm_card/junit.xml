@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="3" errors="0" time="1.791">
+  <testsuite name="Payment Validation" errors="0" failures="3" skipped="0" timestamp="2023-08-16T09:23:32" time="1.253" tests="7">
+    <testcase classname="Payment Validation Should have the correct input type for all fields" name="Payment Validation Should have the correct input type for all fields" time="0.051">
+      <failure>Error: expect(element).toHaveAttribute(&quot;type&quot;, &quot;text&quot;) // element.getAttribute(&quot;type&quot;) === &quot;text&quot;
+
+Expected the element to have attribute:
+  type=&quot;text&quot;
+Received:
+  null
+    at Object.&lt;anonymous&gt; (/home/juliet/Downloads/hack/src/App.test.js:70:29)
+    at Promise.then.completed (/home/juliet/Downloads/hack/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/juliet/Downloads/hack/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/juliet/Downloads/hack/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/juliet/Downloads/hack/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/juliet/Downloads/hack/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/juliet/Downloads/hack/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/home/juliet/Downloads/hack/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/home/juliet/Downloads/hack/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/home/juliet/Downloads/hack/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/home/juliet/Downloads/hack/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/home/juliet/Downloads/hack/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/home/juliet/Downloads/hack/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Payment Validation Should validate the card number correctly" name="Payment Validation Should validate the card number correctly" time="0.024">
+    </testcase>
+    <testcase classname="Payment Validation Should validate the name correctly" name="Payment Validation Should validate the name correctly" time="0.015">
+    </testcase>
+    <testcase classname="Payment Validation Should validate the month correctly" name="Payment Validation Should validate the month correctly" time="0.016">
+    </testcase>
+    <testcase classname="Payment Validation Should validate the year correctly" name="Payment Validation Should validate the year correctly" time="0.017">
+      <failure>Error: expect(received).not.toBeNull()
+
+Received: null
+    at Object.&lt;anonymous&gt; (/home/juliet/Downloads/hack/src/App.test.js:188:34)
+    at Promise.then.completed (/home/juliet/Downloads/hack/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/juliet/Downloads/hack/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/juliet/Downloads/hack/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/juliet/Downloads/hack/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/juliet/Downloads/hack/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/juliet/Downloads/hack/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/home/juliet/Downloads/hack/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/home/juliet/Downloads/hack/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/home/juliet/Downloads/hack/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/home/juliet/Downloads/hack/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/home/juliet/Downloads/hack/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/home/juliet/Downloads/hack/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+    <testcase classname="Payment Validation Should validate the CVV correctly" name="Payment Validation Should validate the CVV correctly" time="0.018">
+    </testcase>
+    <testcase classname="Payment Validation Submit button should only be enabled if all validations are complete" name="Payment Validation Submit button should only be enabled if all validations are complete" time="0.02">
+      <failure>Error: expect(element).toBeDisabled()
+
+Received element is not disabled:
+  &lt;button class=&quot;mx-0&quot; data-testid=&quot;submitButton&quot; type=&quot;submit&quot; /&gt;
+    at Object.&lt;anonymous&gt; (/home/juliet/Downloads/hack/src/App.test.js:252:30)
+    at Promise.then.completed (/home/juliet/Downloads/hack/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/juliet/Downloads/hack/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/juliet/Downloads/hack/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/juliet/Downloads/hack/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/juliet/Downloads/hack/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/juliet/Downloads/hack/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/juliet/Downloads/hack/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/home/juliet/Downloads/hack/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/home/juliet/Downloads/hack/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/home/juliet/Downloads/hack/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/home/juliet/Downloads/hack/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/home/juliet/Downloads/hack/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/home/juliet/Downloads/hack/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
